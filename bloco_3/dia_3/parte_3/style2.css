@@ -1,0 +1,63 @@
+div:hover {
+    border: 5px solid black;
+}
+
+body :nth-child(3):hover {
+    background-color: blueviolet;
+}
+body :nth-child(4):hover {
+    background-color: cyan;
+}
+body :nth-child(5):hover {
+    background-color: coral;
+}
+body :nth-child(6):hover {
+    background-color: magenta;
+}
+body :nth-child(7):hover {
+    background-color: teal;
+}
+
+body :nth-child(3) {
+    color: brown;
+}
+body :nth-child(4) {
+    color: brown;
+}
+body :nth-child(5) {
+    color: brown;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+body :nth-child(6) {
+    color: brown;
+}
+body :nth-child(7) {
+    color: brown;
+}
+
+
+body :nth-child(1) h3 {
+    
+}
+body :nth-child(2) h3 {
+    
+}
+body :nth-child(3) h3 {
+    
+}
+body :nth-child(4) h3 {
+    
+}
+body :nth-child(5) h3 {
+    
+}
+body :nth-child(6) h3 {
+    
+}
+body :nth-child(7) h3 {
+    
+}
+body :nth-child(odd) h3 {
+    color: black;
+}
