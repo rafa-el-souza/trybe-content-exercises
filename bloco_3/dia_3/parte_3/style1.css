@@ -1,0 +1,12 @@
+h1, p {
+    text-align: center;
+}
+ul.website-list li:hover{
+    background-color: coral;
+}
+ul.website-list li:active {
+    color: cyan;
+}
+ul {
+    list-style: none;
+}

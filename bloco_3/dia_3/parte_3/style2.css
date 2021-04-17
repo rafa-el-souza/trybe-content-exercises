@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+}
+
+div:hover {
+    border: 5px solid #4263cf;
+}
+
+:nth-child(3) {
+    background-color: yellow;
+}
+:nth-child(4) {
+    background-color: violet;
+}
+:nth-child(5) {
+    background-color: coral;
+}
+:nth-child(6) {
+    background-color: #555351;
+}
+:nth-child(7) {
+    background-color: #e5e5e5;
+}
+
+:nth-child(3) h3 {
+    padding: 50px 30px 50px 30px;
+    text-align: center;
+    color: violet;
+}
+:nth-child(4) h3 {
+    padding: 50px 30px 50px 30px;
+    text-align: center;
+    color: yellow;
+}
+:nth-child(5) h3 {
+    padding: 75px 30px 75px 30px;
+    text-align: center;
+    color: #555351;
+}
+:nth-child(6) h3 {
+    padding: 50px 30px 50px 30px;
+    text-align: center;
+    color: #e5e5e5;
+}
+:nth-child(7) h3 {
+    padding: 50px 30px 50px 30px;
+    text-align: center;
+    color: #555351;
+
+}
+
+body :nth-child(odd) h3 {
+    font-style: italic;
+}
