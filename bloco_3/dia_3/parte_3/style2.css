@@ -1,63 +1,54 @@
-div:hover {
-    border: 5px solid black;
+body {
+    font-family: sans-serif;
 }
 
-body :nth-child(3):hover {
-    background-color: blueviolet;
+div:hover {
+    border: 5px solid #4263cf;
 }
-body :nth-child(4):hover {
-    background-color: cyan;
+
+:nth-child(3) {
+    background-color: yellow;
 }
-body :nth-child(5):hover {
+:nth-child(4) {
+    background-color: violet;
+}
+:nth-child(5) {
     background-color: coral;
 }
-body :nth-child(6):hover {
-    background-color: magenta;
+:nth-child(6) {
+    background-color: #555351;
 }
-body :nth-child(7):hover {
-    background-color: teal;
-}
-
-body :nth-child(3) {
-    color: brown;
-}
-body :nth-child(4) {
-    color: brown;
-}
-body :nth-child(5) {
-    color: brown;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-body :nth-child(6) {
-    color: brown;
-}
-body :nth-child(7) {
-    color: brown;
+:nth-child(7) {
+    background-color: #e5e5e5;
 }
 
+:nth-child(3) h3 {
+    padding: 50px 30px 50px 30px;
+    text-align: center;
+    color: violet;
+}
+:nth-child(4) h3 {
+    padding: 50px 30px 50px 30px;
+    text-align: center;
+    color: yellow;
+}
+:nth-child(5) h3 {
+    padding: 75px 30px 75px 30px;
+    text-align: center;
+    color: #555351;
+}
+:nth-child(6) h3 {
+    padding: 50px 30px 50px 30px;
+    text-align: center;
+    color: #e5e5e5;
+}
+:nth-child(7) h3 {
+    padding: 50px 30px 50px 30px;
+    text-align: center;
+    color: #555351;
 
-body :nth-child(1) h3 {
-    
 }
-body :nth-child(2) h3 {
-    
-}
-body :nth-child(3) h3 {
-    
-}
-body :nth-child(4) h3 {
-    
-}
-body :nth-child(5) h3 {
-    
-}
-body :nth-child(6) h3 {
-    
-}
-body :nth-child(7) h3 {
-    
-}
+
 body :nth-child(odd) h3 {
-    color: black;
+    font-style: italic;
 }
