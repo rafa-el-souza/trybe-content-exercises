@@ -1,13 +1,14 @@
-let base = 5;
-let altura = 8;
+function triangleArea(base, height) {
+    let area = base * height;
+    console.log(`Area is ${area}`);
+    return area;
+}
 
-console.log(base);
-console.log(altura);
+function trianglePerimeter(base, height) {
+    let perimeter = (2 * base) + (2 * height);
+    console.log(`Perimeter is ${perimeter}`);
+    return perimeter;
+}
 
-let area = base * altura;
-
-console.log(area);
-
-let perimetro = (2 * base) + (2 * altura);
-
-console.log(perimetro);
+triangleArea(6, 99);
+trianglePerimeter(6, 99);
