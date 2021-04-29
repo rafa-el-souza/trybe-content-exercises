@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2 id="page-title">Título</h2>
+    <p class="paragraphs" id="paragraph">Dê uma cor para este parágrafo!</p>
+    <h4 id="subtitle">Subtítulo</h4>
+    <p class="paragraphs" id="second-paragraph">Segundo parágrafo!</p>
+
+    <script>
+      // var paragraph = document.getElementById("paragraph");
+      var paragraph = document.querySelectorAll("p")[0];
+      paragraph.style.color = "red";
+      // document.getElementById("page-title").innerText = "Sonho de uma noite de verão";
+      document.querySelector('#page-title').innerText = "Sonho de uma noite de verão";
+      // document.getElementById("second-paragraph").style.fontFamily = "monospace";
+      document.querySelector("#second-paragraph").style.fontFamily = "monospace";
+      // document.getElementById("second-paragraph").style.fontWeight = "700";
+      document.querySelector("#second-paragraph").style.fontWeight = "700";
+      // document.getElementById("subtitle").style.fontSize = "55px";
+      document.querySelector("#subtitle").style.fontSize = "55px";
+      // console.log(document.getElementsByClassName("paragraphs"));
+      console.log(document.querySelectorAll(".paragraphs"));
+      // document.getElementsByClassName("paragraphs")[0].style.color = "aquamarine";
+      document.querySelectorAll(".paragraphs")[0].style.color = "aquamarine";
+      // document.getElementsByClassName("paragraphs")[0].style.fontSize = "80px";
+      document.querySelectorAll(".paragraphs")[0].style.fontSize = "80px";
+      // document.getElementsByTagName("h4")[0].style.color = "#a5a5a5"
+      document.querySelectorAll("h4")[0].style.color = "#a5a5a5"
+    </script>
+  </body>
+</html>
