@@ -52,3 +52,10 @@ primeiroFilhoDoFilho.appendChild(bisneto);
 
 terceiroFilho = document.querySelector('#bisneto').parentNode.parentNode.parentNode.children[2];;
 console.log(terceiroFilho);
+
+let segundoEUltimoFilhoDoFilho = document.querySelector('#segundoEUltimoFilhoDoFilho');
+
+let paiDoPai = document.querySelector('#paiDoPai');
+paiDoPai.firstElementChild.removeChild(primeiroFilho);
+paiDoPai.firstElementChild.firstElementChild.removeChild(segundoEUltimoFilhoDoFilho);
+console.log(paiDoPai);
