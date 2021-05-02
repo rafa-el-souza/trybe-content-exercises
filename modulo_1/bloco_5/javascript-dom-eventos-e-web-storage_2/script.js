@@ -36,6 +36,11 @@ console.log(terceiroFilho);
 terceiroFilho = document.querySelector('#pai').children[2];
 console.log(terceiroFilho);
 
+// Crie um irmão para elementoOndeVoceEsta .
+// Crie um filho para elementoOndeVoceEsta .
+// Crie um filho para primeiroFilhoDoFilho .
+// A partir desse filho criado, acesse terceiroFilho .
+
 let novoIrmaoDoMeio = document.createElement('div');
 novoIrmaoDoMeio.innerHTML = 'Created dynamically';
 pai.appendChild(novoIrmaoDoMeio);
@@ -53,9 +58,15 @@ primeiroFilhoDoFilho.appendChild(bisneto);
 terceiroFilho = document.querySelector('#bisneto').parentNode.parentNode.parentNode.children[2];;
 console.log(terceiroFilho);
 
+// Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
+
 let segundoEUltimoFilhoDoFilho = document.querySelector('#segundoEUltimoFilhoDoFilho');
 
 let paiDoPai = document.querySelector('#paiDoPai');
 paiDoPai.firstElementChild.removeChild(primeiroFilho);
 paiDoPai.firstElementChild.firstElementChild.removeChild(segundoEUltimoFilhoDoFilho);
+paiDoPai.firstElementChild.firstElementChild.removeChild(novoFilho);
+paiDoPai.firstElementChild.removeChild(terceiroFilho);
+pai.removeChild(pai.lastElementChild);
+pai.removeChild(pai.lastElementChild);
 console.log(paiDoPai);
