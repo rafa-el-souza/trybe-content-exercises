@@ -35,3 +35,20 @@ console.log(terceiroFilho);
 
 terceiroFilho = document.querySelector('#pai').children[2];
 console.log(terceiroFilho);
+
+let novoIrmaoDoMeio = document.createElement('div');
+novoIrmaoDoMeio.innerHTML = 'Created dynamically';
+pai.appendChild(novoIrmaoDoMeio);
+
+let novoFilho = document.createElement('div');
+novoFilho.innerHTML = 'Also Created dynamically';
+elementoOndeVoceEsta.appendChild(novoFilho);
+
+let bisneto = document.createElement('div');
+bisneto.innerHTML = 'Dynamically created';
+bisneto.id = 'bisneto';
+console.log(bisneto);
+primeiroFilhoDoFilho.appendChild(bisneto);
+
+terceiroFilho = document.querySelector('#bisneto').parentNode.parentNode.parentNode.children[2];;
+console.log(terceiroFilho);
