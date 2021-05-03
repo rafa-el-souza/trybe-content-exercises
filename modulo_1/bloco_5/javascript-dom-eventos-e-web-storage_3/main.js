@@ -53,3 +53,9 @@ function changeTextWhenTyping(event) {
 }
 
 input.addEventListener('keyup', changeTextWhenTyping);
+
+function doubleClickRedirect() {
+    window.location = 'https://www.google.com';
+}
+
+myWebpage.addEventListener('dblclick', doubleClickRedirect);
