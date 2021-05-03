@@ -59,3 +59,16 @@ function doubleClickRedirect() {
 }
 
 myWebpage.addEventListener('dblclick', doubleClickRedirect);
+
+
+let colors = ['salmon', 'purple']; 
+let colorIndex = 0;
+function colorChange(event) {
+    event.target.style.color = colors[colorIndex];
+    colorIndex += 1;
+    if (colorIndex >= colors.length) {
+        colorIndex = 0;
+    }
+}
+
+myWebpage.addEventListener('mouseover', colorChange);
