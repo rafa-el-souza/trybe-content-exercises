@@ -47,3 +47,9 @@ function addTechClass(event) {
 for (let index = 0; index < techs.length; index += 1) {
     techs[index].addEventListener('click', addTechClass);
 }
+
+function changeTextWhenTyping(event) {
+    document.querySelector('.tech').innerHTML = event.target.value;
+}
+
+input.addEventListener('keyup', changeTextWhenTyping);
